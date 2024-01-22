@@ -1,6 +1,6 @@
 import os, json
-import shortuuid
 from pprint import pprint
+from datetime import datetime
 
 from llama_cpp import Llama
 from langchain.llms import LlamaCpp
@@ -48,7 +48,7 @@ class Model:
             self.tokenize(prompt)
         response = self.llm(prompt)
         output = {'response': response}
-        with open(os.path.join(RESPONSE_PATH, shortuuid.uuid() + '.txt'), 'w') as file: 
+        with open(os.path.join(RESPONSE_PATH, str(datetime.now()) + '.txt'), 'w') as file: 
             file.write(json.dumps(output))
 
 if __name__ == '__main__':

@@ -1,0 +1,9 @@
+{
+    "MODEL_NAME": "ggml-model-q4_0.bin",
+    "TOKENIZER_NAME": "tokenizer.model",
+    "MAX_TOKENS": 4096,
+    "N_CTX": 4096,
+    "TEMPERATURE": 0,
+    "N_GPU_LAYERS": 50,
+    "N_BATCH": 512
+}
