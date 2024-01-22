@@ -16,4 +16,4 @@ Go into `python` folder and run the next steps <br>
 For questions you can email me at sharhad.bashar@uwaterloo.ca
 
 <br><br><br>
-Normally i would put `data` in the `.gitignore`, and load that from AWS, but for simplicity, I includded it here
+Normally I would put `data` in the `.gitignore`, and load that from AWS, but for simplicity, I includded it here
