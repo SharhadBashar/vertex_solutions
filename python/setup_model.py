@@ -30,7 +30,7 @@ def setup_model():
         "N_BATCH": n_batch
     }
 
-    with open(CONFIG_FILE, 'w') as file: 
+    with open(os.path.join(CONFIG_PATH, CONFIG_FILE), 'w') as file: 
         json.dump(config, file, ensure_ascii = False, indent = 4)
     
     print('Model Config file created in {}'.format(CONFIG_FILE))
